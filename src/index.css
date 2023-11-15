@@ -1,0 +1,35 @@
+/* Global styles for hiding the outer scrollbar */
+html, body {
+    /* overflow: hidden; Prevents scroll */
+    height: 100%; /* Full height */
+  }
+  
+  /* Your existing styles */
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  /* Your existing snap container and section styles */
+  .snap-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh; /* Adjust height as needed */
+  }
+  
+  .snap-section {
+    scroll-snap-align: start;
+    height: 100vh; /* Make each section the height of the viewport */
+  }
+  
+  .scrollbar-hide {
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    &::-webkit-scrollbar {
+      @apply hidden;
+    }
+  
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* Rest of your CSS if any */
