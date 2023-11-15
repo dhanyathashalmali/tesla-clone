@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export const Navbar = () => {
   return (
     <header className='fixed z-10 flex justify-between px-10 py-4 overflow-x-hidden bg-transparent'>
-        <Link to="/" className='flex'> {/* Wrap the image with Link to root */}
+        <Link to="/tesla-clone-vite/" className='flex'> {/* Wrap the image with Link to root */}
             <img src={logo} className='w-28 bg-transparent'/>
         </Link>
         <div className='hidden items-center lg:flex gap-x-6 font-medium ml-40'>

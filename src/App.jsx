@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Hero className="snap-section"/>} />
+        <Route path="/tesla-clone-vite/" element={<Hero className="snap-section"/>} />
         <Route path="/model3" element={<Model3Page />} />
         <Route path="/modelS" element={<ModelSPage />} />
         <Route path="/modelX" element={<ModelXPage />} />
